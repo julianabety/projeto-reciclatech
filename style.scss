@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +10,7 @@
     font-family: "Poppins", sans-serif;
     color: #4B5563;
 }
-
+// estilizando a header
 header {
     display: flex;
     justify-content: space-between;
@@ -65,7 +66,7 @@ header {
         }
     }
 }
-
+// estilizando a parte central do site 
 .primeiraSection {
     display: flex;
     justify-content: space-evenly;
@@ -132,6 +133,7 @@ header {
     color: #2563EB;
 }
 
+//estilizando o segundo box - Dados Númericos 
 .dadosNumericos {
     background-color: #F3F5F8;
     height: 20vh;
@@ -148,13 +150,15 @@ header {
         }
     }
 }
+// estilizando o terceiro box - Como funciona? 
 .comoFunciona {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
     height: 70vh;
 
-    h2, p {
+    h2, h3 {
         width: 75%;
         color: #1F2937;
     }
@@ -196,11 +200,271 @@ header {
 
     .tituloParaDoadores {
         color: #16A34A;
+        
     }
 
     .tituloAdq{
         color:#2563EB;
+        
     }
+}
+
+// estilizando o quarto box - Produtos disponiveis 
+.produtosDisponiveis{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 75vh;
+    background-color: #F3F5F8;
+    
+    h2{
+        color:#1F2937;
+        font-size: 2rem;
+        width: 80%;
+    }
+    h3{
+        color:#4B5563;
+        font-size:1.25rem;
+        width: 80%;
+    }
+
+    section{
+        display: flex;
+        justify-content: space-evenly;
+        height: 50vh;
+        width: 100%;
+
+        article{
+            border: 1px solid #16A34A;
+            border-radius: 10px;
+            width: 15%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 2rem;
+            text-align: center;
+            height: 50vh;
+            background-color: #FFFFFF;
+
+            img{
+                height: 25vh;
+                width: 100%;
+            }
+
+            h3{
+                color:#09090B;
+                font-weight: 400;
+            }
+
+            p{
+                width: 80%;
+                color:#4B5563;
+            }
+
+            button{
+                background-color: #16A34A;
+                color:#FFFFFF;
+                width: 45%;
+                height: 40px;
+                border:none;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+            
+        }
+    }
+}
+
+// estilizando o quinto box - O que o pessoal tá falando? 
+.pessoal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 75vh;
+    background-color: #FFFFFF;
+
+    h2{
+        color:#1F2937;
+        font-size: 2rem;
+    }
+    h3{
+        color:#4B5563;
+        font-size:1.25rem;
+    }
+
+    .box-pessoal{
+        display: flex;
+        justify-content: space-evenly;
+        height: 35vh;
+        width: 70%;
+        padding: 3rem;
+        gap: 2rem;
+        margin: 2rem;
+
+        article{
+            border: 1px solid #9CA3AF;
+             box-shadow: -10px 0px 10px -5px rgba(0, 0, 0, 0.5);
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            height: 28vh;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .box-estrela, p {
+                width: 90%;
+                margin-left: 3rem
+            }
+
+            .box-icone{
+            display: flex;
+            justify-content: space-between;
+            padding-left: 1rem;
+            gap:0.5rem;
+            
+                .texto-icone{
+                    h4{
+                    width: 10vw;
+                    height: 2rem;
+                    flex-direction: column;
+                    } 
+                    p{
+                        margin-left: 0.2rem;
+                    }
+             
+                }
+            }
+        }   
+    } 
+}  
+
+//estilizando o sexto box - Pronto para fazer a diferença? 
+.diferenca{
+    background-color: #F3F5F8;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60vh;
+    padding: 20px 0;
+
+     section {
+        display: flex;
+        width: 80%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: auto;
+        padding: 20px 0;
+        gap:2rem;
+
+        h2 {
+            font-size: 3rem;
+            color: #1F2937;
+        }
+
+        p {
+            font-size: 2rem;
+            text-align: center;
+        }
+        .btn-dif{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: center;
+                width:50%;
+            button{
+                width: 30%;
+                min-width: 172px;
+                height: 8vh;
+                font-size: 1.125rem;
+                border-radius: 10px;
+                cursor: pointer;
+
+                
+            }
+            .btn-dif-verde{
+                    background-color: #16A34A;
+                    border: none;
+                    color: #FFFFFF;
+            }
+            .btn-dif-branco{
+                background-color:white;
+                border:1px solid #16A34A;
+                color:#16A34A;
+            }
+        }
+    }
+}
+
+// estilizando o footer
+footer{
+    background-color: #1F2937;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 40vh;
+    
+    .box-info{
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+        gap:2.5rem;
+        margin:15px; 
+
+         article{
+            padding: 2rem;
+
+            h3{
+                text-align: left;
+                padding: 0.5rem;
+                color: white;
+            }
+
+            ul{
+                li{
+                    list-style: none;
+                    padding: 0.3rem;
+                    a{
+                    text-align: left;
+                    color:#9CA3AF
+                    }
+                }
+            }
+            div{
+                img{
+                    padding: 0.5rem;
+                }
+            }
+            p{
+               color: #9CA3AF;
+            }
+        }
+        .logo-tit{
+            display: flex;
+        }
+    }
+    .aviso{
+        width:100%;
+        display: flex;
+        justify-content: center;
+        border-top: 1.5px solid #9FABBC;
+        padding: 1.5rem;
+        text-align: center;
+
+            p{
+                text-align:center;
+                margin-bottom: 6px;
+                color:#9CA3AF;
+            }
+    }
+    
 }
 
 //* RESPONSIVIDADE
@@ -239,6 +503,22 @@ header {
     }
     .navHeader {
         width: 95%;
+    }
+
+    .comoFunciona{
+        height: 120vh;
+        padding: 20px 0;
+        text-align: center;
+        section{
+            flex-direction: column;
+            align-items: center;
+            text-align: start;
+            row-gap: 20px;
+            
+            article{
+                width: 80%;
+            }
+        }
     }
 }
 
@@ -359,6 +639,20 @@ header {
         div {
             h2 {
                 font-size: 1.5rem;
+            }
+        }
+    }
+
+    .comoFunciona{
+        height: 130vh;
+
+        section{
+            height: 120vh;
+
+            article{
+                div{
+                    font-size :10px;
+                }
             }
         }
     }
