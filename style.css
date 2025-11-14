@@ -411,6 +411,15 @@ footer .aviso p {
   .navHeader {
     width: 65%;
   }
+  .produtosDisponiveis {
+    height: auto;
+  }
+  .produtosDisponiveis section {
+    height: auto;
+  }
+  footer {
+    height: auto;
+  }
 }
 @media (max-width: 1000px) {
   header {
@@ -438,10 +447,24 @@ footer .aviso p {
   .comoFunciona section article {
     width: 80%;
   }
+  .produtosDisponiveis {
+    height: auto;
+  }
+  .produtosDisponiveis section {
+    height: auto;
+    align-items: center;
+    gap: 2rem;
+  }
+  .produtosDisponiveis section article {
+    width: 30%;
+  }
+  footer {
+    height: auto;
+  }
 }
 @media (min-width: 501px) and (max-width: 900px) {
   .navHeader ul li a {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   .primeiraSection {
     flex-direction: column;
@@ -463,6 +486,45 @@ footer .aviso p {
   .boxBtnsPrimeiraSection button {
     min-width: 160px;
     font-size: 1rem;
+  }
+  .produtosDisponiveis {
+    height: auto;
+  }
+  .produtosDisponiveis section {
+    height: auto;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .produtosDisponiveis section article {
+    width: 40%;
+  }
+  .pessoal {
+    height: auto;
+    align-items: center;
+  }
+  .pessoal .box-pessoal {
+    height: auto;
+    flex-direction: column;
+  }
+  .pessoal .box-pessoal article {
+    height: 20vh;
+    align-items: center;
+  }
+  .diferenca {
+    height: auto;
+  }
+  .diferenca section {
+    height: auto;
+  }
+  .diferenca section h2 {
+    font-size: 2rem;
+  }
+  .diferenca section p {
+    font-size: 1.5rem;
+  }
+  footer {
+    height: auto;
   }
 }
 @media (min-width: 201px) and (max-width: 500px) {
