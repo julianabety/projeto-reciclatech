@@ -184,38 +184,44 @@ header h1 {
 .produtosDisponiveis {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  height: 75vh;
+  height: 100vh;
   background-color: #F3F5F8;
 }
 .produtosDisponiveis h2 {
   color: #1F2937;
   font-size: 2rem;
   width: 80%;
+  padding: 1rem;
 }
 .produtosDisponiveis h3 {
   color: #4B5563;
   font-size: 1.25rem;
   width: 80%;
+  padding: 1rem;
+  gap: 2rem;
 }
 .produtosDisponiveis section {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   height: 50vh;
   width: 100%;
+  padding: 2rem;
 }
 .produtosDisponiveis section article {
   border: 1px solid #16A34A;
   border-radius: 10px;
   width: 15%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 2rem;
   text-align: center;
-  height: 50vh;
   background-color: #FFFFFF;
 }
 .produtosDisponiveis section article img {
@@ -243,9 +249,11 @@ header h1 {
 .pessoal {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  height: 75vh;
+  height: 80vh;
+  padding: 20px 0;
   background-color: #FFFFFF;
 }
 .pessoal h2 {
@@ -261,7 +269,6 @@ header h1 {
   justify-content: space-evenly;
   height: 35vh;
   width: 70%;
-  padding: 3rem;
   gap: 2rem;
   margin: 2rem;
 }
@@ -270,8 +277,8 @@ header h1 {
   box-shadow: -10px 0px 10px -5px rgba(0, 0, 0, 0.5);
   background-color: #FFFFFF;
   border-radius: 10px;
-  height: 28vh;
-  width: 30%;
+  height: 33.5vh;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -279,21 +286,17 @@ header h1 {
 }
 .pessoal .box-pessoal article .box-estrela, .pessoal .box-pessoal article p {
   width: 90%;
-  margin-left: 3rem;
 }
 .pessoal .box-pessoal article .box-icone {
   display: flex;
   justify-content: space-between;
-  padding-left: 1rem;
   gap: 0.5rem;
 }
 .pessoal .box-pessoal article .box-icone .texto-icone h4 {
-  width: 10vw;
-  height: 2rem;
-  flex-direction: column;
+  margin-left: 0.5rem;
 }
 .pessoal .box-pessoal article .box-icone .texto-icone p {
-  margin-left: 0.2rem;
+  margin-left: 0.5rem;
 }
 
 .diferenca {
@@ -328,6 +331,7 @@ header h1 {
   justify-content: space-evenly;
   align-items: center;
   width: 50%;
+  gap: 2rem;
 }
 .diferenca section .btn-dif button {
   width: 30%;
@@ -360,12 +364,12 @@ footer {
 footer .box-info {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  gap: 2.5rem;
+  justify-content: space-evenly;
+  gap: 2rem;
   margin: 15px;
 }
 footer .box-info article {
-  padding: 2rem;
+  padding: 1.5rem;
 }
 footer .box-info article h3 {
   text-align: left;
@@ -482,7 +486,7 @@ footer .aviso p {
     align-content: center;
   }
   .navHeader ul li a {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     text-align: center;
   }
   .primeiraSection {
@@ -491,7 +495,7 @@ footer .aviso p {
     height: 80vh;
   }
   .primeiraSection img {
-    width: 50vh;
+    width: 35vh;
   }
   .primeiraSection section {
     text-align: center;
@@ -526,5 +530,64 @@ footer .aviso p {
   }
   .comoFunciona section article div {
     font-size: 10px;
+  }
+  .produtosDisponiveis {
+    height: auto;
+  }
+  .produtosDisponiveis h2 {
+    font-size: 1.5rem;
+    gap: 2rem;
+  }
+  .produtosDisponiveis section {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .produtosDisponiveis section article {
+    width: 60%;
+  }
+  .pessoal {
+    height: auto;
+    align-items: center;
+  }
+  .pessoal h2 {
+    font-size: 1.5rem;
+  }
+  .pessoal h3 {
+    font-size: 1rem;
+  }
+  .pessoal .box-pessoal {
+    height: auto;
+    flex-direction: column;
+  }
+  .pessoal .box-pessoal article {
+    width: auto;
+    padding: auto;
+  }
+  .pessoal .box-pessoal article .box-icone {
+    width: 90%;
+  }
+  .pessoal .box-pessoal article .box-icone .texto-icone {
+    width: 90%;
+    text-align: center;
+  }
+  .diferenca {
+    height: auto;
+  }
+  .diferenca section {
+    align-items: center;
+  }
+  .diferenca section h2 {
+    font-size: 1.8rem;
+  }
+  .diferenca section p {
+    font-size: 1rem;
+  }
+  footer {
+    height: auto;
+  }
+  footer .box-info {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=style.css.map */
